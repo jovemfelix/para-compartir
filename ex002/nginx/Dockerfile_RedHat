@@ -1,0 +1,11 @@
+# Usar la base image de Nginx 1.26 en UBI 9
+FROM registry.redhat.io/ubi9/nginx-126:9.7
+
+# Crear el archivo index.html con el texto "hola"
+RUN echo "prueba" > /opt/app-root/src/index.html
+
+# Exponer el port 8080
+EXPOSE 8080
+
+# ¡LA CLAVE! Sobrescribir el script de ayuda por defecto para iniciar Nginx
+CMD ["nginx", "-g", "daemon off;"]
