@@ -1,0 +1,2 @@
+- https://catalog.redhat.com/en/software/containers/ubi9/nginx-126/678f5851a09b9e2d461ba1d9#get-this-image
+- https://catalog.redhat.com/en/software/containers/ubi9/httpd-24/61a60c3e3e9240fca360f74a#get-this-image

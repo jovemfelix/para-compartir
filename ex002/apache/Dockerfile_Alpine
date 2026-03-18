@@ -5,7 +5,7 @@ FROM docker.io/library/httpd:alpine
 RUN sed -i "s/Listen 80/Listen 8080/g" /usr/local/apache2/conf/httpd.conf
 
 # Crear el archivo index.html con el texto "hola" en el DocumentRoot de Alpine
-RUN echo "hola" > /usr/local/apache2/htdocs/index.html
+RUN echo "taller 18" > /usr/local/apache2/htdocs/index.html
 
 # Modificar permisos para la compatibilidad con OpenShift
 # OpenShift ejecuta contenedores con un UID aleatorio, pero siempre con el GID 0.
